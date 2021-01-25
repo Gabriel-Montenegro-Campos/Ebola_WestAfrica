@@ -6,7 +6,7 @@ EVDdata[end-9:end, :]#end-9:end is a range with 10 elements
 rows, cols = size(EVDdata)
 for j = 1:cols
     for i = 1:rows  # this order goes does one column at a time
-       if !isdigit(string(EVDdata[i, j])[1]) # remember that "!" is the NOT operator (week 1, lecture 5)
+       if !isdigit(string(EVDdata[i, j])[1])
          EVDdata[i,j] = 0
        end
    end
